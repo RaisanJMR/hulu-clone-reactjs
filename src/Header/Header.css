@@ -5,13 +5,11 @@
   padding: 20px;
   justify-content: space-between;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .header::-webkit-scrollbar {
   display: none;
-}
-.header {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
 }
 .header__icon > .MuiSvgIcon-root {
   font-size: 30px;

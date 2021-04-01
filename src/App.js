@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header'
+import Nav from './Nav/Nav';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       {/* HEADER */}
       <Header/>
       {/* NAV */}
+      <Nav/>
       {/* RESULT */}
     </div>
   );
