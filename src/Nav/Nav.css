@@ -4,7 +4,7 @@
   overflow-x: scroll;
   padding: 10px;
   padding-left: 40px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .nav::-webkit-scrollbar {
   display: none;
