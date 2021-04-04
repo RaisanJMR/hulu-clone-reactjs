@@ -1,9 +1,12 @@
 import React from 'react';
-import './Result.css'
+import VideoCard from './VideoCard/VideoCard';
+import './Result.css';
 function Result() {
-  return <div className="results">
-      
-  </div>;
+  return (
+    <div className="results">
+      <VideoCard/>
+    </div>
+  );
 }
 
 export default Result;
