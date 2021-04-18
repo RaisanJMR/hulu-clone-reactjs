@@ -1,17 +1,28 @@
-* {
-    box-sizing: border-box;
+/* * {
+  box-sizing: border-box;
+} */
+.videoCard p,
+.videoCard h2 {
+  margin: 0;
+  padding: 0;
 }
 .videoCard {
-  color: white;
-  border: 1px solid red;
+  color: #fff;
   width: 500px;
   height: 400px;
   padding: 20px;
+  transition: transform 130ms ease-in-out;
+}
+.videoCard:hover {
+  transform: scale(1.09);
 }
 .videoCard > img {
-  width: 300px;
-  height: 500px;
+  height: 300px;
+  width: 500px;
   object-fit: contain;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.videoCard > h2 {
+  padding-top: 10px;
 }
