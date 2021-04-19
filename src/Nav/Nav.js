@@ -15,6 +15,7 @@ function Nav() {
             <h2>Live</h2>
             <h2>Western</h2>
             <h2>Comedy</h2>
+            <h2>Mollywood</h2>
         </div>
     )
 }

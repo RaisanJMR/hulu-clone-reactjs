@@ -14,7 +14,7 @@
   transition: transform 130ms ease-in-out;
 }
 .videoCard:hover {
-  transform: scale(1.09);
+  transform: scale(1.03);
 }
 .videoCard > img {
   height: 300px;

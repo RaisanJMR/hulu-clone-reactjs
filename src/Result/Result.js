@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import VideoCard from './VideoCard/VideoCard';
 import './Result.css';
 function Result() {
+  const [movies, setMovies] = useState([]);
+  console.log(movies);
   return (
     <div className="results">
-      <VideoCard/>
+      {movies.map((movie) => (
+        <VideoCard />
+      ))}
     </div>
   );
 }
