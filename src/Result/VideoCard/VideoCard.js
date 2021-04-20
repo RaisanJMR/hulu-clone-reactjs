@@ -1,17 +1,28 @@
 import React from 'react';
 import './VideoCard.css';
-// import Img from './img1.jpg';
+import TextTruncate from 'react-text-truncate';
+// import { ThumbUpSharp } from '@material-ui/icons';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+const base_url = 'https://image.tmdb.org/t/p/original/';
 function VideoCard({ movie }) {
   return (
     <div className="videoCard">
       <img
-        src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/a3liO9nUSCyEhyiAnDOw_Profit-with-JavaScript-new.jpg"
+        src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
         alt=""
       />
-      {/* <img src={Img} alt=""/> */}
-      <p>Lorem ipsum dolor sit.</p>
-      <h2>movie title</h2>
-      <p>number of likes</p>
+      <TextTruncate
+        line={2}
+        element="p"
+        truncateText="..."
+        text={movie.overview}
+      />
+      <h2>{movie.title || movie.original_name}</h2>
+      <p className="videoCard__stats">
+        {movie.media_type && `${movie.media_type}&bull;`}
+        {movie.release_date || movie.first_air_date}  &bull;
+        <ThumbUpIcon /> {" "} {movie.vote_count}
+      </p>
     </div>
   );
 }
